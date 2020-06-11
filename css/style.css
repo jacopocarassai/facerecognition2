@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 0.8113620448179272) 0%,
+    rgba(148, 233, 207, 1) 100%
+  );
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
+}
+
+canvas,
+video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 50%;
+  width: auto;
+}
+
+video {
+  border: 20px solid yellow;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 70px;
+  color: #250b74;
+}
+
+p {
+  max-width: 710px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  font-size: 23px;
+  width: 100%;
+}

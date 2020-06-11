@@ -6,23 +6,21 @@
     <title>Mood recognition Zwei</title>
     <script defer src="face-api/dist/face-api.min.js"></script>
     <script defer src="script.js"></script>
-    <style type="text/css">
-      body {
-        margin: 0;
-        padding: 0;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      canvas {
-        position: absolute;
-      }
-    </style>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <h1>Smile, you're on candid camera!</h1>
+    <p>
+      Welcome to the Mood Recognition Zwei (there was a "Eins", but was a
+      failure) using
+      <a
+        href="https://justadudewhohacks.github.io/face-api.js/docs/index.html#models-face-recognition"
+        >Face API</a
+      >
+      for the face recognition and
+      <a href="http://shuoyang1213.me/WIDERFACE/">WIDER FACE</a> for human face
+      models and facial emotion recognition
+    </p>
     <video id="video" width="720" height="560" autoplay muted></video>
   </body>
 </html>
