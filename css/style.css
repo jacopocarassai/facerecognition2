@@ -16,6 +16,14 @@ body {
   font-family: Geneva, Tahoma, Verdana, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  border-bottom: 3px solid black;
+  color: inherit;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
 canvas,
 video {
   position: absolute;
@@ -56,4 +64,17 @@ p {
   left: 0;
   right: 0;
   margin: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+span.tag {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 3px;
+  background: #f0f3f7;
+  color: red;
+  font-family: Consolas, monaco, monospace;
+  margin: 0 5px;
+  font-size: 16px;
 }
