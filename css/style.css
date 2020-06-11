@@ -47,4 +47,13 @@ p {
   margin: 0 auto;
   font-size: 23px;
   width: 100%;
+  line-height: 35px;
+}
+
+.project_info {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
