@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Smile, you're on candid camera!</h1>
+    <div class="nomobile">
+      <p>I am sorry, this is only available on desktop</p>
+    </div>
+    <h1>Mood Recognition Zwei</h1>
     <p>
       Welcome to the Mood Recognition Zwei (there was a "Eins", but was a
       failure) using
@@ -20,14 +23,26 @@
       >
       for the face recognition and
       <a href="http://shuoyang1213.me/WIDERFACE/" target="_blank">WIDER FACE</a>
-      for human face models and facial emotion recognition
+      for human face models and facial emotion recognition<br />
+      <small
+        ><small
+          >(fret not for your privacy: the video stream will not be saved
+          anywhere)</small
+        ></small
+      >
     </p>
     <video id="video" width="720" height="560" autoplay muted></video>
+    <div class="loader">
+      <img src="img/loader.gif" alt="LOADER" />
+      <span
+        >Looking for your webcam. Make sure you have authorized your browser to
+        access your camera.</span
+      >
+    </div>
 
     <p class="project_info">
       About this project: <span class="tag">AI</span
       ><span class="tag">Face recognition</span><span class="tag">ES6</span
-      ><span class="tag">Benchmark models</span
       ><span class="tag">Typescript</span><br /><br />
       Find the Github project
       <a

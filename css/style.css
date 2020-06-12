@@ -32,8 +32,9 @@ video {
   left: 0;
   right: 0;
   margin: auto;
-  height: 50%;
+  height: 50vh;
   width: auto;
+  z-index: 9999;
 }
 
 video {
@@ -43,19 +44,19 @@ video {
 h1 {
   font-family: "Pacifico", cursive;
   text-align: center;
-  margin-top: 50px;
-  font-size: 70px;
+  margin: 20px;
+  font-size: 40px;
   color: #250b74;
 }
 
 p {
-  max-width: 710px;
+  max-width: 1000px !important;
   text-align: center;
   display: block;
   margin: 0 auto;
-  font-size: 23px;
+  font-size: 17px;
   width: 100%;
-  line-height: 35px;
+  line-height: 24px;
 }
 
 .project_info {
@@ -77,4 +78,161 @@ span.tag {
   font-family: Consolas, monaco, monospace;
   margin: 0 5px;
   font-size: 16px;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 200px;
+  width: auto;
+  max-width: 720px;
+  text-align: center;
+}
+
+.loader span {
+  display: block;
+}
+
+.loader img {
+  width: 100px;
+}
+
+.nomobile {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 9999999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .nomobile {
+    display: flex !important;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 0.8113620448179272) 0%,
+    rgba(148, 233, 207, 1) 100%
+  );
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 3px solid black;
+  color: inherit;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+canvas,
+video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 50vh;
+  width: auto;
+  z-index: 9999;
+}
+
+video {
+  border: 20px solid yellow;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  margin: 20px;
+  font-size: 40px;
+  color: #250b74;
+}
+
+p {
+  max-width: 710px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  font-size: 17px;
+  width: 100%;
+  line-height: 24px;
+}
+
+.project_info {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+span.tag {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 3px;
+  background: #f0f3f7;
+  color: red;
+  font-family: Consolas, monaco, monospace;
+  margin: 0 5px;
+  font-size: 16px;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 200px;
+  width: auto;
+  max-width: 720px;
+  text-align: center;
+}
+
+.loader span {
+  display: block;
+}
+
+.loader img {
+  width: 100px;
+}
+
+.nomobile {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 9999999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .nomobile {
+    display: flex !important;
+  }
 }
